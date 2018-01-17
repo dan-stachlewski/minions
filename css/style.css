@@ -33,78 +33,32 @@ footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video{
     font-family: 'Lato', Arial, sans-serif;
 }
-
-p{line-height: 1.5;}
-
-/* Custom Project CSS; */
-
 .page-wrapper{
-    width: 1200px;
-    margin: 1em auto;
-}
-section{
-    width: 60%;
-    margin: 25px auto;
-    padding: 0 0 0.5em 0;
-    border: 1px solid #efefef;
-    border-radius: 5px;
-    box-shadow: 7px 7px 11px -3px rgba(149,149,134,0.5);
-}
-.article-wrapper{
+    width: 960px;
+    margin: 0px auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
-article{
-    width: 45%;
-    margin:3%;
-    /* background: #fef; */
-}
-img{
-    width: 280px;
-    max-width: 80%;
-    max-height: 280px;
-    width: 100%;
-    padding-left: 30px;
-
-
+    align-items: center;
 }
 h1{
     background-color: #efefef;
-    text-align: center;
-}
-h1,h2{
     padding: 0.5em;
-}
-
-.teaser h2{
+    margin-top:0;
     text-align: center;
-    padding:1em;
-}
-.teaser-sub-heading{
-    position: relative;
-}
-/*
-.teaser-sub-heading:before{
-    content: "";
-    height: 25px;;
-    top: 34px;
-    left: 15px;
-    background: #efefef;
-    position: absolute;
-    border: 1px solid #efefef;
-}
-*/
-.teaser-sub-heading:after{
-    content: "";
-    width: 50%;
-    bottom: 15px;
-    right: 30px;
-    border: 1px solid #efefef;
-    position: absolute;
-}
-p{
-    padding: 1em;
-    text-align: justify;
+    align-content: space-between;
 
+}
+h3{
+    padding: 0.5em 0.5em 0 1em;
+}
+.module-1, .module-2, .module-3{
+    width:300px;
+    border: 1px solid #efefef;
+    background: #fff;
+    margin: 0.5em auto;
+    box-shadow: 7px 7px 11px -3px rgba(149, 149, 149, 0.5);
+}
+.module-profile{
+    width:266px;
+    margin: 0 1em 1em 1em;
 }
