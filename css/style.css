@@ -1,0 +1,64 @@
+/*
+HTML Template
+v1.0
+Last Updated: 2018-01-17
+Author: Dan Stachlewski
+*/
+
+/* Headline Font: Montserrat | Paragraph Font: Lato */
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', Verdana, sans-serif;font-weight: bolder;line-height: 1.1;
+}
+
+/* Reference: http://maxdesign.com.au/articles/relative/ */
+h1{font-size: 2em;}
+h2{font-size: 1.6em;}
+h3{font-size: 1.4em;}
+h4{font-size: 1.2em;}
+h5{font-size: 1em;}
+h6{font-size: 0.9em;}
+
+p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+    font-family: 'Lato', Arial, sans-serif;
+}
+.page-wrapper{
+    width: 960px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h1{
+    background-color: #efefef;
+    padding: 0.5em;
+    margin-top:0;
+    text-align: center;
+    align-content: space-between;
+
+}
+h3{
+    padding: 0.5em 0.5em 0 1em;
+}
+.module-1, .module-2, .module-3{
+    width:300px;
+    border: 1px solid #efefef;
+    background: #fff;
+    margin: 0.5em auto;
+    box-shadow: 7px 7px 11px -3px rgba(149, 149, 149, 0.5);
+}
+.module-profile{
+    width:266px;
+    margin: 0 1em 1em 1em;
+}
