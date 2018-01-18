@@ -6,7 +6,7 @@
 ============= DELETE ON MEREGE =======================
 ======================================================
 */
-*{
+*, img{
     margin: 0; padding: 0;
 }
 .page-wrapper{
@@ -22,6 +22,7 @@
 header{
     width:100%;
     background: #eee; /* ligh grey */
+    margin-top:25px;
 }
 .main-nav-menu{
     background: #ffe135; /* banana-yellow */
@@ -35,7 +36,8 @@ header{
     text-align: center;
     color: #000;
     display: block;
-    padding:10px;
+    padding:0.625em; /* 10px */
+    line-height: 2.5em; /* 40px */
 }
 .main-nav-menu ul li a:hover{
     background: #555;
@@ -43,7 +45,7 @@ header{
 }
 /* Flex Box Styles */
 /* These styles apply when the screen size is Desktop. */
-@media screen and (min-width:768px){
+@media screen and (min-width:48em /* 768px */){
     /* The ul = FLEX CONTAINER so the li = FLEX ITEMS */
     .main-nav-menu ul{
         /* all the li will line up next to eachother */
@@ -54,11 +56,26 @@ header{
     /* this spaces each li out evenly taking up the full width */
     .main-nav-menu ul li{
         /* flex: 1 1 0; */
-        margin-right:0.5em;
+        margin-right:0.5em; /* 8px */
     }
-    /* removes the margin from the last li tag */
+
+    /* removes the margin from the last li tag
     .main-nav-menu ul li:last-child{
         margin-right:0;
     }
-
+    */
+    /* Had to add this b/c there was 10px throwing out the heggth of the navbar. */
+    .main-nav-menu ul li:first-child a{
+        height:2.5em; /* 40px */
+        margin-right: auto;
+    }
+    .main-nav-menu ul li:first-child{
+        height:2.5em; /* 40px */
+        margin-right: auto;
+        margin-left: 0.5em; /* 8px */
+    }
+    .main-nav-menu ul li a img{
+        height:2.5em; /* 40px */
+        width:2.5em; /* 40px */
+    }
 }
