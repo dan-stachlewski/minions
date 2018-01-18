@@ -1,28 +1,12 @@
 /* Ref: https://www.youtube.com/watch?v=2plKBskaKfY */
 /* body styles */
 
-/*
-======================================================
-============= DELETE ON MEREGE =======================
-======================================================
-*/
-*, img{
-    margin: 0; padding: 0;
-}
-.page-wrapper{
-    width: 100%;
-    max-width:960px;
-    margin: 0 auto;
-}
-/*
-======================================================
-======================================================
-*/
+
 /* styles for main-navmenu */
 header{
     width:100%;
     background: #eee; /* ligh grey */
-    margin-top:25px;
+    /* margin-top:25px; */
 }
 .main-nav-menu{
     background: #ffe135; /* banana-yellow */
@@ -41,7 +25,10 @@ header{
 }
 .main-nav-menu ul li a:hover{
     background: #555;
-    color: fff;
+    color: #fff;
+}
+.main-nav-menu ul li:first-child a:hover{
+    background: #ffe135; /* banana-yellow */
 }
 /* Flex Box Styles */
 /* These styles apply when the screen size is Desktop. */
@@ -54,16 +41,16 @@ header{
         justify-content: flex-end;
     }
     /* this spaces each li out evenly taking up the full width */
-    .main-nav-menu ul li{
+    .main-nav-menu ul li a{
         /* flex: 1 1 0; */
         margin-right:0.5em; /* 8px */
     }
 
-    /* removes the margin from the last li tag
-    .main-nav-menu ul li:last-child{
+    /* removes the margin from the last a tag */
+    .main-nav-menu ul li a:last-child{
         margin-right:0;
     }
-    */
+
     /* Had to add this b/c there was 10px throwing out the length of the navbar. */
     .main-nav-menu ul li:first-child a{
         height:2.5em; /* 40px */

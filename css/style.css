@@ -37,8 +37,13 @@ time, mark, audio, video{
     width: 960px;
     margin: 0px auto;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.module-wrapper{
+    display: flex;
     flex-direction: row;
-    align-items: center;
+    align-content: space-between;
 }
 h1{
     background-color: #efefef;
@@ -55,8 +60,11 @@ h3{
     width:300px;
     border: 1px solid #efefef;
     background: #fff;
-    margin: 0.5em auto;
+    margin: 0.81em;
     box-shadow: 7px 7px 11px -3px rgba(149, 149, 149, 0.5);
+}
+.module-1{
+    margin-left: 0;
 }
 .module-profile{
     width:266px;
