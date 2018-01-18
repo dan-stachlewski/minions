@@ -64,7 +64,7 @@ header{
         margin-right:0;
     }
     */
-    /* Had to add this b/c there was 10px throwing out the heggth of the navbar. */
+    /* Had to add this b/c there was 10px throwing out the length of the navbar. */
     .main-nav-menu ul li:first-child a{
         height:2.5em; /* 40px */
         margin-right: auto;
